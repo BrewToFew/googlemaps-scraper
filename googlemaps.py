@@ -45,6 +45,7 @@ class GoogleMapsScraper:
 
     def sort_by(self, url, ind):
         self.driver.get(url)
+        self.driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div/div[2]/div[1]/div[3]/div[1]/div[1]/form[2]/div/div/button').click()
         wait = WebDriverWait(self.driver, MAX_WAIT)
 
         # open dropdown menu
